@@ -2,15 +2,11 @@
 import argparse
 import os
 import sys
-import csv
-import json
-import numpy as np
-import tensorflow as tf
 import pcl as pc
 from collections import OrderedDict
 
-import Make_CityGML_Data as mcd2
-import PointCloud_To_CityGML as gml2
+from src.plane_ransac import Make_CityGML_Data as mcd2
+from src.citygml import PointCloud_To_CityGML as gml2
 
 file_data = OrderedDict()
 file_wall_data = OrderedDict()
