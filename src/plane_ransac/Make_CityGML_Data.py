@@ -4,12 +4,10 @@ import math
 from sympy import Symbol, solve, Eq
 import numpy as np
 import random
-import PointCloud_To_CityGML2 as gml
-import reduce_node as rn
-import range_list as rl
+from ..citygml import PointCloud_To_CityGML as gml
 from rdp import rdp
 import matplotlib.pyplot as plt
-import Point_Sort as ps
+import Point_sort as ps
 ''' boundary '''
 # import fiona
 # import shapely.geometry as geometry
