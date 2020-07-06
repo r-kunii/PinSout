@@ -19,9 +19,9 @@ data_dtype = 'float32'
 label_dtype = 'uint8'
 
 # Set paths
-# filelist = os.path.join(BASE_DIR, 'meta/all_data_label.txt')  # npy file list ex)Area_1_WC_1.npy
+# filelist = os.path.join(BASE_DIR, 'meta/area6_data_label.txt')  # npy file list ex)Area_1_WC_1.npy
 # filelist = os.path.join(BASE_DIR, 'meta/sc_test_data_label.txt')  # npy file list ex)Area_1_WC_1.npy
-filelist = os.path.join(BASE_DIR, 'meta/all_data_label.txt')  # npy file list ex)Area_1_WC_1.npy
+filelist = os.path.join(BASE_DIR, 'meta/area6_data_label.txt')  # npy file list ex)Area_1_WC_1.npy
 # filelist = os.path.join(BASE_DIR, 'meta/area_9_data_label.txt')  # npy file list ex)Area_1_WC_1.npy
 data_label_files = [os.path.join(indoor3d_data_dir, line.rstrip()) for line in open(filelist)]
 # output_dir = os.path.join(data_dir, '/root/pointnet/sem_seg/Area_1_5class')

@@ -11,7 +11,7 @@ import indoor3d_util
 # Constants
 data_dir = os.path.join(ROOT_DIR, 'data')
 # indoor3d_data_dir = os.path.join(data_dir, 'stanford_indoor3d')
-indoor3d_data_dir = os.path.join(data_dir, '5class_dataset5')
+indoor3d_data_dir = os.path.join(data_dir, 'stanford_indoor3d')
 NUM_POINT = 4096
 H5_BATCH_SIZE = 1000
 data_dim = [NUM_POINT, 9]
@@ -20,9 +20,9 @@ data_dtype = 'float32'
 label_dtype = 'uint8'
 
 # Set paths
-filelist = os.path.join(BASE_DIR, 'meta/all_data_label.txt')  # npy file list ex)Area_1_WC_1.npy
+filelist = os.path.join(BASE_DIR, 'meta/area6_data_label.txt')  # npy file list ex)Area_1_WC_1.npy
 data_label_files = [os.path.join(indoor3d_data_dir, line.rstrip()) for line in open(filelist)]
-output_dir = os.path.join(data_dir, 'indoor3d_sem_seg_hdf5_data3')
+output_dir = os.path.join(data_dir, 'indoor3d_sem_seg_hdf5_data')
 if not os.path.exists(output_dir):
     os.mkdir(output_dir)
 output_filename_prefix = os.path.join(output_dir, 'ply_data_all')
